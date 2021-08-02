@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddCouponComponent implements OnInit {
 
+  expiryDate: string = '';
+  code: string = '';
+  discount: string = '';
+  
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit() {
+    console.log(`code : ${this.code}, discount : ${this.discount}, expiry date : ${this.expiryDate}`);
+    this.code = '';
+    this.discount = '';
+    this.expiryDate= '';
   }
 
 }

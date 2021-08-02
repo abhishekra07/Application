@@ -10,6 +10,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 
+import { FormsModule } from '@angular/forms';
+
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AddProductComponent } from './add-product/add-product.component';
@@ -41,6 +43,7 @@ const routes: Routes = [
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

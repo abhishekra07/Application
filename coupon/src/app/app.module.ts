@@ -9,10 +9,14 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { Routes, RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
 import { AddCouponComponent } from './add-coupon/add-coupon.component';
 
 const routes: Routes = [
@@ -42,6 +46,9 @@ const routes: Routes = [
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
+    FormsModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
