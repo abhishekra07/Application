@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 import { LoginComponent } from './login/login.component';
 
 import { FormsModule } from '@angular/forms';
@@ -28,6 +29,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatToolbarModule,
     MatIconModule,
     FormsModule,
+    MatButtonModule,
   ],
   providers: [AuthguardServiceService],
   bootstrap: [AppComponent]
