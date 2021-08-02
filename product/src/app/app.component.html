@@ -1,3 +1,9 @@
 <mat-toolbar color="primary">
     <span>Product</span>
-</mat-toolbar>
+    <div class="spacer"></div>
+    <a mat-button routerLink="/">Home</a>
+    <a mat-button routerLink="/add-product">Add Product</a>
+    <a mat-raised-button href="http://localhost:4200/home">Back to dashboard</a>
+  </mat-toolbar>
+  
+  <router-outlet></router-outlet>
