@@ -16,6 +16,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AddProductComponent } from './add-product/add-product.component';
 
+import {MatCardModule} from '@angular/material/card';
+
 const routes: Routes = [
   {
     path: '',
@@ -44,6 +46,7 @@ const routes: Routes = [
     MatSelectModule,
     MatInputModule,
     FormsModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
